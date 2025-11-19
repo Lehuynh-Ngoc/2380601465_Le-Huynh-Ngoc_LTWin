@@ -76,6 +76,8 @@ namespace GiaiPhuongTrinh
                 if (hesoA == 0)
                 {
                     Console.WriteLine("Day la phuong trinh bac 1:");
+                    hesoA = hesoB;
+                    hesoB = hesoC;
                     base.Giai();
                     return;
                 }
@@ -169,4 +171,5 @@ namespace GiaiPhuongTrinh
             }
         }
     }
+
 }

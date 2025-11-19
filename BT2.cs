@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -26,7 +26,7 @@ namespace QuanLySinhVien
 
         public void XuatThongTin()
         {
-            Console.WriteLine($"Ma SV: {MaSV}, Ho ten: {HoTen}, Diem TB: {DiemTB:F1}");
+            Console.Write($"Ma SV: {MaSV}, Ho ten: {HoTen}, Diem TB: {DiemTB:F1}");
         }
 
         public bool IsDat()
@@ -108,7 +108,7 @@ namespace QuanLySinhVien
             {
                 Console.WriteLine($"\nSinh vien {i + 1}:");
                 danhSachSV[i].XuatThongTin();
-                Console.WriteLine(danhSachSV[i].IsDat() ? "-> Dat" : "-> Khong dat");
+                Console.Write(danhSachSV[i].IsDat() ? " (Dat)" : " (Khong dat)");
             }
         }
 
